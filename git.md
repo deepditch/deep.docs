@@ -21,20 +21,21 @@ A new branch should be made from the master branch when working on a feature or 
 New features should be added in feature branches. The following commands will create a new branch from master.
 ```
 git checkout master
-git checkout -b feature/[BriefDescriptionOfFeature]
+git checkout -b feature/[GitHubIssueNumber]/[BriefDescriptionOfFeature]
 ```
 If a feature requires significant code changes and multiple developers, it may be a good idea to create sub feature branches.
 ```
 git checkout feature/[...]
-git checkout -b feature/[BriefDescriptionOfSubFeature]
+git checkout -b feature/[GitHubIssueNumber]/[BriefDescriptionOfSubFeature]
 ```
 
 ### Bugs
 Similarly, bug fixes should be completed in a separate branch. 
 ```
 git checkout master
-git checkout -b bug/[BriefDescriptionOfBug]
+git checkout -b bug/[GitHubIssueNumber]/[BriefDescriptionOfBug]
 ```
+Note: If your bug or feature does not have an issue number, either create an issue (recomended), or omit the [GitHubIssueNumber] portion of the branch name. 
 
 ## Making Changes
 Once you have created a branch, changes can be made within that branch and committed to the repository
